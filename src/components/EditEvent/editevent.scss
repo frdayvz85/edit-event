@@ -1,0 +1,62 @@
+.edit-event {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: 256px calc(100% - 256px);
+
+  @include carbon--breakpoint-between((320px + 1), md) {
+    grid-template-columns: 1fr;
+  }
+}
+.edit-wrapper {
+  background-color: $ui-01;
+  margin: 0 !important;
+}
+.rectangular {
+  background: $carbon--white-0;
+  min-width: 256px;
+  @include carbon--breakpoint-between((320px + 1), md) {
+    display: none;
+    width: 0;
+  }
+}
+.form-header {
+  padding: $spacing-05 0;
+}
+.event-start input {
+  width: 100%;
+}
+.edit-actions {
+  padding-bottom: 80px;
+}
+.event-start-date {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.event-start-date input {
+  width: 100%;
+}
+.edit-actions button {
+  width: 100%;
+}
+.event-start-date .bx--date-picker__input {
+  width: auto;
+  max-width: none;
+  flex: 1;
+}
+.event-start-date .bx--date-picker-container {
+  width: 100%;
+}
+.title {
+  @include carbon--type-style("productive-heading-05");
+}
+.event-title {
+  @include carbon--type-style("productive-heading-01");
+  @include carbon--font-weight("semibold");
+}
+.event-detail {
+  @include carbon--type-style("body-long-01");
+}
+.event-start-end {
+  margin-top: $spacing-07;
+}
